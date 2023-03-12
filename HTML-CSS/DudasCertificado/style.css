@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    padding: 2rem;
+    border: 2px solid #000;
+    margin: .5rem;
+}
+
+.contenedor-1 p:empty {
+    background-color: greenyellow;
+}
+
+.correo {
+    padding: 1rem;
+    background-color: rebeccapurple;
+    color: white;
+    text-decoration: none;
+}
+
+ul li:only-child {
+    color: blue;
+}
+
+.puntos-rojos {
+    height: 100px;
+    width: 100px;
+    margin: 1rem;
+    border-color: red;
+    border-style: dotted;
+    /* border: 2px dotted red; Tambien Funciona*/
+}
+
+/* 
+nav > a:hover::before {
+    color: beige;
+}
+
+nav > a {
+    color: beige;
+}
+
+ul#primary-nav li.active { mas especifico
+    color: beige;
+} */
+
+/* .ejemplo {
+    color: gainsboro;
+}
+
+.ejemplo p {
+    color: gainsboro;
+}
+
+div {
+    color: gainsboro;
+}
+
+#ejemplo {  Mas espesifico
+    color: gainsboro;
+} */

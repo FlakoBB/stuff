@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.contenedor {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 20em;
+    height: 30em;
+    padding: 1em;
+    border-radius: 2rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1; /* Pone el contenido al frente de todo */
+}
+
+
+/* Circulo de Fondo */
+.contenedor::before {
+    position: absolute;
+    content: '';
+    width: 20em;
+    height: 20em;
+    left: 6em;
+    top: -6em;
+    border-radius: 50%;
+    background-color: green;
+    transition: all .3s linear;
+    z-index: -1; /* Pone el circulo por debajo del contenido del contenedor */
+}
+
+/* % Hover que afecta al circulo en el fondo */
+.contenedor:hover::before {
+    width: 28em;
+    height: 24em;
+    left: -1em;
+    top: -10em;
+}
+
+/* texto en el fondo */
+.contenedor #texto-bg {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+    font-weight: bolder;
+    font-size: 6em;
+    opacity: .1;
+    z-index: -2;
+    user-select: none;
+}
+
+/* Otros */
+.contenedor img {
+    width: 100%;
+}
+
+.contenedor:hover {
+    flex-direction: column-reverse;
+}
