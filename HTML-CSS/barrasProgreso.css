@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos por defecto de las barras */
+progress {
+    width: 30rem;
+    height: 1rem;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+/* Color por defecto */
+progress::-webkit-progress-value {
+    background-color: cyan;
+}
+
+/* Colores propios por clase (green) */
+progress.bg-green::-webkit-progress-value {
+    /* height: 100%; */
+    background-color: green;
+}
+
+/* Colores propios por clase (yellow) */
+progress.bg-yellow::-webkit-progress-value {
+    /* height: 100%; */
+    background-color: yellow;
+}
+
+/* Colores propios por clase (red) */
+progress.bg-red::-webkit-progress-value {
+    /* height: 100%; */
+    background-color: red;
+}
+
+/* Establece el color de la barra de progreso no completada */
+/* progress::-webkit-progress-bar {
+    height: 100%;
+    background-color: cyan;
+} */
