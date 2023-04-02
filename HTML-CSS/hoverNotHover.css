@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+    background-color: darkgrey;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: .6rem;
+    background-color: black;
+}
+
+.item {
+    width: 4rem;
+    height: 4rem;
+    border-radius: .6rem;
+    background-color: #ff69b4;
+    transition: background-color 200ms;
+}
+
+/* ? selecciona todos los elementos (.item) que no esten hover, cuando al menos uno de los otros elementos este hover. */
+.container:has(.item:hover) >
+.item:not(:hover) {
+    background-color: #ffc3e1;
+}
