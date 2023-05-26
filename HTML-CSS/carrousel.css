@@ -6,7 +6,7 @@
 
 html,
 body {
-    min-height: 100dvh;
+    max-height: 100dvh;
     background-color: #BCFFBC;
 }
 
@@ -30,18 +30,19 @@ body {
     justify-content: flex-start;
     gap: 2rem;
     padding: 2rem 0;
-    overflow-x: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .btn_roll {
-    width: 8rem;
+    width: 4rem;
     height: 8rem;
     border: none;
     background: none;
     outline: none;
     border-radius: .6rem;
     color: #185518;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     opacity: .5;
 }
