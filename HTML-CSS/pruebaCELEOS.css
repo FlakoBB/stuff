@@ -1,0 +1,48 @@
+
+/* * Using the :nth-child() pseudo class, how would you style every third item in a list, starting with item 2 */
+li:nth-child(3n+2) {
+  background-color: red;
+}
+
+/* * In this example, what color will Paragraph 1 be? */
+p:first-of-type {
+  color: red;
+  /* ? se aplica el color rojo ya que se indica que tenga este color el primer elemento (hijo) de tipo <p> */
+}
+
+.container {
+  color: yellow;
+}
+
+p:first-child {
+  color: green;
+  /* ? :first-child se aplica al primer elemnto <p> SI Y SOLO SI este elemento es el primer hijo de su padre*/
+}
+
+/* * How extend a header elemento across an entire grid row from de first colimn through the last column */
+.table {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background-color: #333;
+}
+
+.table header {
+  grid-column: 1 / -1;
+  /* ? el valor '-1' se refiere a la ultima columna disponible de la cuadricula */
+  background-color: dodgerblue;
+}
+
+.cell {
+  background-color: #999;
+}
+
+/* * You want to create striped table rows using CSS without adding a class to any element. Which CSS woul correctly applay the backgroun color to every odd row in a table? */
+table {
+  background-color: #ccc;
+}
+
+tr:nth-child(2n+1) {
+  /* ? el valor '2n+1' selecciona cada segundo elemento (hijo) empezando por el primero siguiendo entonces la secuencia '1, 3, 5, 7, 9, ...' */
+  background-color: dodgerblue;
+}
