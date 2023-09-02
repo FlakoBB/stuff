@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #e6ecf3;
+}
+
+html,
+body {
+  min-height: 100dvh;
+  background-color: #0e1a33;
+}
+
+.background {
+  position: relative;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.blur {
+  padding: 2rem;
+  height: 100%;
+  background-color: #0e1a3333;
+  backdrop-filter: blur(30px);
+}
+
+.newSection {
+  padding: 2rem;
+  min-height: 100dvh;
+}
