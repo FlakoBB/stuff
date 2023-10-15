@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+::-webkit-scrollbar {
+  width: .5rem;
+  background-color: teal;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: antiquewhite;
+}
+
+header {
+  height: 5rem;
+  background-color: violet;
+}
+
+main {
+  height: calc(100dvh - 8rem);
+  padding: 1rem;
+}
+
+footer {
+  height: 3rem;
+  background-color: thistle;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  border: 2px solid blue;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: yellow;
+}
+
+.sectionContainer h2 {
+  flex-shrink: 0;
+  color: blue;
+  font-size: 2rem;
+  line-height: 1;
+  border-bottom: 2px solid blue;
+}
+
+.sectionContainer .content {
+  flex-grow: 1;
+  padding: 1rem 0 0;
+  max-height: calc(100% - calc(2rem + 2px));
+  background-color: aquamarine;
+}
+
+.list {
+  background-color: chocolate;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-template-rows: repeat(auto-fill 10rem);
+  grid-gap: 1rem;
+  overflow-y: scroll;
+  height: 100%;
+}
+
+.item {
+  min-width: 10rem;
+  height: 10rem;
+  border-radius: .5rem;
+  background-color: chartreuse;
+}
