@@ -1,0 +1,58 @@
+html {
+  font-size: 20px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+/* ToDo: hacer estilos tipicos de estructura de una página web */
+
+header {
+  background-color: tomato;
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;;
+}
+
+nav {
+  background-color: bisque;
+}
+
+footer {
+  background-color: yellowgreen;
+  grid-column: 1 / -1;
+}
+
+main {
+  background-color: burlywood;
+}
+
+section {
+  background-color: teal;
+}
+
+article {
+  background-color: violet;
+}
+
+aside {
+  background-color: dodgerblue;
+}
+
+div {
+  background-color: orange;
+}
+
+header,
+nav,
+footer,
+main,
+section,
+article,
+aside,
+div {
+  padding: .3rem;
+}
