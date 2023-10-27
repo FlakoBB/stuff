@@ -1,0 +1,42 @@
+header {
+  background-color: tomato;
+}
+
+nav {
+  background-color: bisque;
+}
+
+footer {
+  background-color: yellowgreen;
+}
+
+main {
+  background-color: burlywood;
+}
+
+section {
+  background-color: teal;
+}
+
+article {
+  background-color: violet;
+}
+
+aside {
+  background-color: dodgerblue;
+}
+
+div {
+  background-color: orange;
+}
+
+header,
+nav,
+footer,
+main,
+section,
+article,
+aside,
+div {
+  padding: .3rem;
+}
