@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+  color: #07090F;
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100dvh;
+  padding: 4rem;
+  background-image: linear-gradient(
+    to right bottom,
+    #E7F9FF,
+    #026DB2,
+    #07090F
+  );
+}
+
+.selectBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20rem;
+  padding: .5rem .8rem;
+  border-radius: .5rem;
+  background-color: #deebf7;
+  cursor: pointer;
+}
+
+.selectBox i {
+  line-height: .4;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.selectBox:hover i {
+  writing-mode: vertical-lr;
+}
+
+.selectBox:hover .optionsList{
+  transform: scaleY(1);
+}
+
+.selectedOption {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.optionsList {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 110%;
+  border-radius: .5rem;
+  background-color: #deebf7;
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform .3s ease;
+}
+
+.optionsList__item {
+  list-style: none;
+  font-size: 1.2rem;
+  padding: .5rem .8rem;
+}
+
+.optionsList__item:hover {
+  background-color: #9cc0e2;
+}
