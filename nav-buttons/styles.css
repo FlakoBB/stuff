@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+  color: #E6ECF3;
+}
+
+html,
+body {
+  min-height: 100dvh;
+  background-color: #0E1A33;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100dvh;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 3rem;
+  width: 3rem;
+  padding: .4rem;
+  border-radius: 1.5rem;
+  transition: width .2s linear,
+              box-shadow .4s ease;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+a.btn:hover {
+  width: 8rem;
+  box-shadow: 0 0 10px #E6ECF3;
+}
+
+a.btn svg {
+  height: 80%;
+  width: auto;
+  transition: transform .4s ease;
+}
+
+a.btn span {
+  position: absolute;
+  opacity: 0;
+  transform: translateY(4rem);
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: display .4s ease, transform .4s ease, opacity .4s ease;
+}
+
+a.btn:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+a.btn:hover svg {
+  transform: translateY(-3rem);
+}
