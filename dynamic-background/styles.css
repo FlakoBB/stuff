@@ -6,7 +6,7 @@
 
 body {
   height: 100dvh;
-  background-color: #0E1A33;
+  background-color: #0e1a33;
   position: relative;
 }
 
@@ -29,7 +29,7 @@ body {
   min-width: 100px;
   height: auto;
   aspect-ratio: 1/1;
-  background-color: rgba(41, 95, 171, 1);
+  background-color: rgba(14, 26, 51, 1);
   overflow: hidden;
   transform: rotateZ(calc(90deg * var(--i)));
 }
@@ -37,7 +37,7 @@ body {
 .background_section::before {
   position: absolute;
   content: '';
-  background: radial-gradient(#E6ECF3, transparent, transparent);
+  background: radial-gradient(#2960AB, transparent, transparent);
   width: 200%;
   height: 200%;
   animation: animate 1s linear infinite;
@@ -46,7 +46,7 @@ body {
 .background_section::after {
   position: absolute;
   content: '';
-  background-color: rgba(41, 95, 171, .8);
+  background-color: rgba(14, 26, 51, .8);
   inset: 4px;
 }
 
@@ -71,7 +71,7 @@ body {
 main {
   max-width: 1024px;
   height: 400dvh;
-  background-color: #0E1A3350;
+  background-color: rgba(14, 26, 52, .4);
   backdrop-filter: blur(10px);
   margin: auto;
   color: #E6ECF3;
